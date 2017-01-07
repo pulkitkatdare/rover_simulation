@@ -1,2 +1,0 @@
-
--DCATKIN_DEVEL_PREFIX=/home/dhruv-shah/ros_ws/rover_simulation/autonomous_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dhruv-shah/ros_ws/rover_simulation/autonomous_ws/install -G Unix Makefiles
