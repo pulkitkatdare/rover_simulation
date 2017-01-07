@@ -1,6 +1,6 @@
 # Compiled files
-ws/devel
-ws/build
+autonomous_ws/devel
+autonomous_ws/build
 
 # Mac shit
 *.DS_Store*
