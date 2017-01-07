@@ -4,3 +4,12 @@ autonomous_ws/build
 
 # Mac shit
 *.DS_Store*
+
+# Temp files
+*.swp
+*~
+*.swap
+
+# Compiled files and libraries
+*.so
+*.out
