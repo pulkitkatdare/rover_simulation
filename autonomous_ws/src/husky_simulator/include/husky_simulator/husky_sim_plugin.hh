@@ -7,10 +7,10 @@
 #include <ros/ros.h>
 #include <std_msgs/Float64MultiArray.h>
 
-namespace gazebo
-{
-	class MoveHusky : public ModelPlugin
-	{
+namespace gazebo {
+	
+	class MoveHusky : public ModelPlugin {
+
 		public: MoveHusky();
 		public: void Load(physics::ModelPtr, sdf::ElementPtr);
 		public: void LoadThread();
@@ -34,7 +34,6 @@ namespace gazebo
 		private: float back_right_wrench;
 
 		private: ros::Subscriber subscriber;
-
 	};
 
 	GZ_REGISTER_MODEL_PLUGIN(MoveHusky);

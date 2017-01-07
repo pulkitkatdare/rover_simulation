@@ -30,7 +30,6 @@ namespace gazebo {
 			this->_spinnerThread = boost::thread(boost::bind(&MoveHusky::LoadThread, this));
 
 		}
-
 	}
 
 	void MoveHusky::LoadThread() {
