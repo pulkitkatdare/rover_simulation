@@ -326,7 +326,7 @@
             <erp>0.900000</erp>
       </limit></ode></physics>
     </joint>
-    <plugin name="husky_diff_controller" filename="libhusky_gazebo_plugins.so">
+    <!-- <plugin name="husky_diff_controller" filename="libhusky_gazebo_plugins.so">
       <alwaysOn>true</alwaysOn>
       <updateRate>100.0</updateRate>
       <backLeftJoint>back_left_joint</backLeftJoint>
@@ -336,6 +336,6 @@
       <wheelSeparation>0.5709</wheelSeparation>
       <wheelDiameter>0.3555</wheelDiameter>
       <torque>35</torque>
-    </plugin>
+    </plugin> -->
   </model>
 </sdf>

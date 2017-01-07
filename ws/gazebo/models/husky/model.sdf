@@ -354,7 +354,7 @@
         </ode>
       </physics>
     </joint>
-    <plugin name="husky_diff_controller" filename="libhusky_gazebo_plugins.so">
+<!--    <plugin name="husky_diff_controller" filename="libhusky_gazebo_plugins.so
       <alwaysOn>true</alwaysOn>
       <updateRate>100.0</updateRate>
       <backLeftJoint>back_left_joint</backLeftJoint>
@@ -364,13 +364,13 @@
       <wheelSeparation>0.5709</wheelSeparation>
       <wheelDiameter>0.3555</wheelDiameter>
       <torque>35</torque>
-    </plugin>
+    </plugin> -->
     <include>
       <uri>model://hokuyo</uri>
       <pose>0.2 0 0.2 0 0 0</pose>
     </include>
     <joint name="hokuyo_joint" type="revolute">
-      <child>hokuyo::link</child>
+      <child>hokuyo::link12</child>
       <parent>base_link</parent>
       <axis>
         <xyz>0 0 1</xyz>
