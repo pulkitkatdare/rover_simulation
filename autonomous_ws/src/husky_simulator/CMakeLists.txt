@@ -137,7 +137,7 @@ add_library(husky_simulator
 # add_dependencies(husky_simulator ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
-#add_executable(husky_sim_test src/husky_sim_test.cpp)
+add_executable(husky_sim_test src/husky_sim_test.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
@@ -149,9 +149,9 @@ target_link_libraries(husky_simulator
   ${GAZEBO_LIBRARIES}
 )
 
-#target_link_libraries(husky_sim_test
-#  ${catkin_LIBRARIES}
-#)
+target_link_libraries(husky_sim_test
+  ${catkin_LIBRARIES}
+)
 
 #############
 ## Install ##
