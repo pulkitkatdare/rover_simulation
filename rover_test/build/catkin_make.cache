@@ -1,0 +1,2 @@
+husky_control:husky_description:husky_gazebo:husky_msgs:husky_navigation:husky_simulator:husky_ur5_moveit_config
+-DCATKIN_DEVEL_PREFIX=/home/dhruv-shah/ros_ws/rover_simulation/rover_test/devel -DCMAKE_INSTALL_PREFIX=/home/dhruv-shah/ros_ws/rover_simulation/rover_test/install -G Unix Makefiles

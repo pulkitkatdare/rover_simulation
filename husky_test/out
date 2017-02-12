@@ -1,0 +1,26 @@
+Type: geometry_msgs/PoseStamped
+
+Publishers: 
+ * /move_base (http://dhruv-ubuntu-new:32911/)
+
+Subscribers: None
+
+
+Type: move_base_msgs/MoveBaseActionGoal
+
+Publishers: 
+ * /move_base (http://dhruv-ubuntu-new:32911/)
+
+Subscribers: 
+ * /move_base (http://dhruv-ubuntu-new:32911/)
+
+
+Type: geometry_msgs/PoseStamped
+
+Publishers: 
+ * /rviz (http://dhruv-ubuntu-new:43246/)
+
+Subscribers: 
+ * /move_base (http://dhruv-ubuntu-new:32911/)
+
+
