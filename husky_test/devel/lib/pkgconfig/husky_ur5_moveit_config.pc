@@ -1,0 +1,8 @@
+prefix=/home/dhruv-shah/ros_ws/rover_simulation/husky_test/devel
+
+Name: husky_ur5_moveit_config
+Description: Description of husky_ur5_moveit_config
+Version: 0.2.7
+Cflags: 
+Libs: -L/home/dhruv-shah/ros_ws/rover_simulation/husky_test/devel/lib 
+Requires: 

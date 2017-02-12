@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/dhruv-shah/ros_ws/rover_simulation/husky_test/install/setup.sh

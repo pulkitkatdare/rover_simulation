@@ -7,7 +7,7 @@
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
   <arg name="verbose" default="true"/>
-  <arg name="world_name" default="$(find husky_simulator)/gazebo/worlds/saved.world"/> 
+  <arg name="world_name" default="$(find husky_simulator)/gazebo/worlds/saved_block.world"/> 
 
   <!-- set use_sim_time flag -->
   <group if="$(arg use_sim_time)">
