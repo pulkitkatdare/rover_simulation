@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package>
+  <name>rover_gazebo</name>
+  <version>0.0.1</version>
+  <description>Launch a empty world with the rover</description>
+
+  <author email="alankarkotwal13@gmail.com">Alankar Kotwal</author>
+  <author email="dhruv.ilesh@gmail.com">dhruv-shah</author>
+
+  <maintainer email="alankarkotwal13@gmail.com">Alankar Kotwal</maintainer>
+  <maintainer email="dhruv.ilesh@gmail.com">dhruv-shah</maintainer>
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <!-- Commonly used license strings: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>BSD</license>
+
+
+  <!-- Url tags are optional, but mutiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/rover_gazebo</url> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roslaunch</build_depend>
+  <run_depend>controller_manager</run_depend>
+  <run_depend>gazebo_plugins</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>gazebo_ros_control</run_depend>
+  <run_depend>hector_gazebo_plugins</run_depend>
+  <run_depend>husky_control</run_depend>
+  <run_depend>husky_description</run_depend>
+  <run_depend>pointcloud_to_laserscan</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>rostopic</run_depend>
+
+</package>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="world_name" default="$(find rover_gazebo)/worlds/clearpath_playpen.world" />
+  <arg name="husky_gazebo_description" default="$(find msi_2k16_17_urdf)/urdf/msi.xacro" />
+
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(arg husky_gazebo_description)'" />
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)"/> 
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+  <!-- Load Husky control information -->
+  <include file="$(find husky_control)/launch/control.launch"/>
+
+  <!-- Spawn robot in gazebo -->
+  <node name="spawn_rover" pkg="gazebo_ros" type="spawn_model"
+    args="-pause -urdf -param robot_description -model mobile_base"/>
+
+</launch>

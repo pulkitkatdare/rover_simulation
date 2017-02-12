@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>rover_control</name>
+  <version>0.0.1</version>
+  <description>Control for the IITB Mars Rover</description>
+
+  <author email="alankarkotwal13@gmail.com">Alankar Kotwal</author>
+  <author email="dhruv.ilesh@gmail.com">Dhruv Shah</author>
+
+  <maintainer email="alankarkotwal13@gmail.com">Alankar Kotwal</maintainer>
+  <maintainer email="dhruv.ilesh@gmail.com">Dhruv Shah</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roslaunch</build_depend>
+  <run_depend>robot_localization</run_depend>
+  <run_depend>joy</run_depend>
+  <run_depend>rostopic</run_depend>
+
+</package>
