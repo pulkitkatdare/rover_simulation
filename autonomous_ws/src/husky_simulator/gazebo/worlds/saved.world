@@ -579,10 +579,13 @@
               <resolution>0.01</resolution>
             </range>
           </ray>
-          <plugin name='laser' filename='libRayPlugin.so'/>
-          <always_on>1</always_on>
-          <update_rate>30</update_rate>
-          <visualize>1</visualize>
+          <plugin name='laser' filename='libgazebo_ros_laser.so'>
+            <topicName>/hokuyo</topicName>
+            <frameName>map</frameName>
+            <always_on>1</always_on>
+            <update_rate>30</update_rate>
+            <visualize>1</visualize>
+          </plugin>
         </sensor>
         <velocity_decay>
           <linear>0</linear>
