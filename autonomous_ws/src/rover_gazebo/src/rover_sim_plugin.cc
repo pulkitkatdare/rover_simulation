@@ -79,26 +79,42 @@ namespace gazebo {
 		this->lin_vel = rx_msg->linear.x;
 		this->ang_vel = rx_msg->angular.z;
 
-		// Calculate all velocities/angles here
-		// front_left_vel  = rx_msg->data[0];
-		// front_right_vel = rx_msg->data[1];
-		// back_left_vel   = rx_msg->data[2];
-		// back_right_vel  = rx_msg->data[3];
+		// For the calculation, assuming 2 wheel drive.
+		// m(v_r - v_l)r_k = I w
+		// v_linear = <v_r, v_l>
+
+		float rover_Iz = 25.0;
+		float wheel_moment = 4.0;
+
+		float right_vel = ((rover_Iz * this->ang_vel / wheel_moment) + (2 * this->lin_vel)) / 2;
+		float left_vel = (2 * this->lin_vel) - right_vel;
+
+		front_left_vel  = left_vel;
+		front_right_vel = right_vel;
+		mid_left_vel    = left_vel;
+		mid_right_vel   = right_vel;
+		back_left_vel   = left_vel;
+		back_right_vel  = right_vel;
+
 	}
 
 	void RoverControl::OnUpdate(const common::UpdateInfo &) {
-		// if ( subscriber.getNumPublishers() != 0 ) {
-		//     this->front_left_joint->SetVelocity(0,front_left_vel);
-		//     this->front_right_joint->SetVelocity(0,front_right_vel);
-		//     this->back_left_joint->SetVelocity(0,back_left_vel);
-		//     this->back_right_joint->SetVelocity(0,back_right_vel);
-		//   }
-		//   else {
-		//     this->front_left_joint->SetVelocity(0,0);
-		//     this->front_right_joint->SetVelocity(0,0);
-		//     this->back_left_joint->SetVelocity(0,0);
-		//     this->back_right_joint->SetVelocity(0,0);
-		// }
+		if ( subscriber.getNumPublishers() != 0 ) {
+		    this->front_left_drive->SetVelocity(0,front_left_vel);
+		    this->front_right_drive->SetVelocity(0,front_right_vel);
+		    this->back_left_drive->SetVelocity(0,back_left_vel);
+		    this->back_right_drive->SetVelocity(0,back_right_vel);
+		    this->mid_left_drive->SetVelocity(0,mid_left_vel);
+		    this->mid_right_drive->SetVelocity(0,mid_right_vel);
+		  }
+		  else {
+		    this->front_left_drive->SetVelocity(0,0);
+		    this->front_right_drive->SetVelocity(0,0);
+		    this->back_left_drive->SetVelocity(0,0);
+		    this->back_right_drive->SetVelocity(0,0);
+		    this->mid_left_drive->SetVelocity(0,0);
+		    this->mid_right_drive->SetVelocity(0,0);
+		}
 	}
 
 }
