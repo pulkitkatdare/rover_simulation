@@ -18,7 +18,7 @@
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 
   <!-- Load Husky control information -->
-  <include file="$(find husky_control)/launch/control.launch"/>
+  <include file="$(find rover_control)/launch/control.launch"/>
 
   <!-- Spawn robot in gazebo -->
   <node name="spawn_rover" pkg="gazebo_ros" type="spawn_model"
