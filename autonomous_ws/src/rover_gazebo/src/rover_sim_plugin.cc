@@ -95,6 +95,7 @@ namespace gazebo {
 		mid_right_vel   = right_vel;
 		back_left_vel   = left_vel;
 		back_right_vel  = right_vel;
+		// Confirm: Is the above fine, or do we need this->front_left_vel and so on.
 
 	}
 
