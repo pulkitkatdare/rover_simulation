@@ -4,7 +4,7 @@
   <!-- Included URDF/XACRO Files -->
   <!-- <xacro:include filename="$(find husky_description)/urdf/decorations.urdf.xacro" /> -->
   <xacro:include filename="$(find msi_2k16_17_urdf)/urdf/wheel.urdf.xacro" />
-  <xacro:include filename="$(find msi_2k16_17_urdf)/urdf/hokuyo.urdf.xacro" />
+  <!-- <xacro:include filename="$(find msi_2k16_17_urdf)/urdf/hokuyo.urdf.xacro" /> -->
   <!--<xacro:include filename="$(find msi_2k16_17_urdf)/urdf/arm.urdf" />-->
 
   <material name="chassis">
@@ -270,10 +270,10 @@
         <origin xyz=" -0.2 0 0" rpy="0 0 ${M_PI}" />
       </joint>-->
 
-    <joint name="hokuyo_joint" type="fixed">
+<!--     <joint name="hokuyo_joint" type="fixed">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <parent link="base_link" />
       <child link="base_laser_link" />
     </joint>
-
+ -->
 </robot>
