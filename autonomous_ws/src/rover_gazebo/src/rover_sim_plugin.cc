@@ -1,4 +1,6 @@
 #include <rover_sim_plugin.hh>
+#include <gazebo/common/common.hh>
+#include <gazebo/gazebo.hh>
 
 namespace gazebo {
 
@@ -84,7 +86,7 @@ namespace gazebo {
 		// v_linear = <v_r, v_l>
 
 		float rover_Iz = 25.0;
-		float wheel_moment = 4.0;
+		float wheel_moment = 4.5;
 
 		float right_vel = ((rover_Iz * this->ang_vel / wheel_moment) + (2 * this->lin_vel)) / 2;
 		float left_vel = (2 * this->lin_vel) - right_vel;
@@ -117,5 +119,4 @@ namespace gazebo {
 		    this->mid_right_drive->SetVelocity(0,0);
 		}
 	}
-
 }

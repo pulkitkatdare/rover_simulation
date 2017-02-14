@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
 <robot name="mars_rover_iitb" xmlns:xacro="http://ros.org/wiki/xacro">
+  <gazebo>
+    <plugin name="drive_controller" filename="librover_gazebo.so">
+      <topicName>"cmd_vel"</topicName>
+    </plugin>
 
+  </gazebo>
   <!-- Included URDF/XACRO Files -->
   <!-- <xacro:include filename="$(find husky_description)/urdf/decorations.urdf.xacro" /> -->
   <xacro:include filename="$(find msi_2k16_17_urdf)/urdf/wheel.urdf.xacro" />
