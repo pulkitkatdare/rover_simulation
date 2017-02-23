@@ -425,8 +425,8 @@ clean: husky_msgs/CMakeFiles/husky_msgs_gencpp.dir/clean
 # Target rules for target husky_msgs/CMakeFiles/husky_msgs_generate_messages.dir
 
 # All Build rule for target.
-husky_msgs/CMakeFiles/husky_msgs_generate_messages.dir/all: husky_msgs/CMakeFiles/husky_msgs_generate_messages_lisp.dir/all
 husky_msgs/CMakeFiles/husky_msgs_generate_messages.dir/all: husky_msgs/CMakeFiles/husky_msgs_generate_messages_py.dir/all
+husky_msgs/CMakeFiles/husky_msgs_generate_messages.dir/all: husky_msgs/CMakeFiles/husky_msgs_generate_messages_lisp.dir/all
 husky_msgs/CMakeFiles/husky_msgs_generate_messages.dir/all: husky_msgs/CMakeFiles/husky_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f husky_msgs/CMakeFiles/husky_msgs_generate_messages.dir/build.make husky_msgs/CMakeFiles/husky_msgs_generate_messages.dir/depend
 	$(MAKE) -f husky_msgs/CMakeFiles/husky_msgs_generate_messages.dir/build.make husky_msgs/CMakeFiles/husky_msgs_generate_messages.dir/build
