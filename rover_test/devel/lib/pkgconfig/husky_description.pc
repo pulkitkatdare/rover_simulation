@@ -1,8 +1,0 @@
-prefix=/home/dhruv-shah/ros_ws/rover_simulation/rover_test/devel
-
-Name: husky_description
-Description: Description of husky_description
-Version: 0.2.7
-Cflags: 
-Libs: -L/home/dhruv-shah/ros_ws/rover_simulation/rover_test/devel/lib 
-Requires: 

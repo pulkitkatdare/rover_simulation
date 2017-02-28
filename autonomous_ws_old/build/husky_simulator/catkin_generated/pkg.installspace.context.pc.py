@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "husky_simulator"
-PROJECT_SPACE_DIR = "/home/dhruv-shah/ros_ws/rover_simulation_ref/autonomous_ws_old/install"
+PROJECT_SPACE_DIR = "/home/dhruv-shah/ros_ws/rover_simulation/autonomous_ws_old/install"
 PROJECT_VERSION = "0.0.0"

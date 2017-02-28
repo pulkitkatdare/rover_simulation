@@ -1,5 +1,5 @@
 # generated from catkin/cmake/template/order_packages.context.py.in
-source_root_dir = "/home/dhruv-shah/ros_ws/rover_simulation_ref/autonomous_ws_old/src"
+source_root_dir = "/home/dhruv-shah/ros_ws/rover_simulation/autonomous_ws_old/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
 underlay_workspaces = "/opt/ros/indigo".split(';') if "/opt/ros/indigo" != "" else []

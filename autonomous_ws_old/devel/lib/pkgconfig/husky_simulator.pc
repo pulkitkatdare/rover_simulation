@@ -1,8 +1,8 @@
-prefix=/home/dhruv-shah/ros_ws/rover_simulation_ref/autonomous_ws_old/devel
+prefix=/home/dhruv-shah/ros_ws/rover_simulation/autonomous_ws_old/devel
 
 Name: husky_simulator
 Description: Description of husky_simulator
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/dhruv-shah/ros_ws/rover_simulation_ref/autonomous_ws_old/devel/lib 
+Libs: -L/home/dhruv-shah/ros_ws/rover_simulation/autonomous_ws_old/devel/lib 
 Requires: 

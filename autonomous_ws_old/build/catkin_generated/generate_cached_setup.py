@@ -19,9 +19,9 @@ except ImportError:
             break
     from catkin.environment_cache import generate_environment_script
 
-code = generate_environment_script('/home/dhruv-shah/ros_ws/rover_simulation_ref/autonomous_ws_old/devel/env.sh')
+code = generate_environment_script('/home/dhruv-shah/ros_ws/rover_simulation/autonomous_ws_old/devel/env.sh')
 
-output_filename = '/home/dhruv-shah/ros_ws/rover_simulation_ref/autonomous_ws_old/build/catkin_generated/setup_cached.sh'
+output_filename = '/home/dhruv-shah/ros_ws/rover_simulation/autonomous_ws_old/build/catkin_generated/setup_cached.sh'
 with open(output_filename, 'w') as f:
     #print('Generate script for cached setup "%s"' % output_filename)
     f.write('\n'.join(code))
